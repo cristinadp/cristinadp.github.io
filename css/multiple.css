@@ -1,0 +1,65 @@
+
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+}
+
+.box1 { 
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 295px;
+	background: #55BABF;
+	border-right: 1px solid #CACECF;
+	z-index: 1000;
+}
+
+.lesson {
+	position: relative;
+	margin: 0 auto;
+	max-width: 69em;
+	padding-left: 250px;
+}
+
+h2 {
+	padding: 25px;
+	color: #fff;
+}
+
+li {
+  border-top: 1px solid rgba(0,0,0,0.2);
+  list-style: none;
+  transition: all 300ms ease-in-out;
+  padding: 11px 0;
+}
+
+li:hover {
+	background-color: #0797C9;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	padding: 17px;
+}
+
+ul {
+	list-style: none;
+}
+
+textarea {
+	height: 300px;
+	width: 800px;
+}
+
+#result {
+	border: 2px solid red;
+	display: inline-block;
+}
