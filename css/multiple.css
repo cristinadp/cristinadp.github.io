@@ -11,15 +11,39 @@ body {
 	font-size: 16px;
 }
 
-.box1 { 
+nav { 
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	width: 295px;
 	background: #55BABF;
 	border-right: 1px solid #CACECF;
-	z-index: 1000;
 }
+
+.hamburger {
+	display: block;
+	cursor: pointer;
+	margin: 30px;
+	padding-left: 20px;
+}
+
+.line {
+	border-bottom: 3px solid #bbb;
+	margin-bottom: 6px;
+	width: 2rem;
+	border-radius: 2.5rem;
+}
+
+.line:lastchild {
+	margin-bottom: 0;
+}
+
+.close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
 
 .lesson {
 	position: relative;
@@ -29,6 +53,7 @@ body {
 }
 
 h2 {
+	margin-top: 50px;
 	padding: 25px;
 	color: #fff;
 }
@@ -62,4 +87,14 @@ textarea {
 #result {
 	border: 2px solid red;
 	display: inline-block;
+}
+
+.box1 {
+	transform: translateX(-295px);
+	transition: all .3s ease-in-out;
+}
+
+.sidebar {
+	transition: translateX(0px);
+	transition: all .3s ease-in-out;
 }

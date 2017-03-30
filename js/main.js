@@ -2,32 +2,46 @@ $(window).on("scroll", function () {
 	var distanceScrolled = $(window).scrollTop();
 	console.log("The distance scrolled is " + distanceScrolled);
 
-if (distanceScrolled <= 608) {
-	$(".navbar-default").addClass("navbar-transparent");
+if (distanceScrolled >= 580) {
+	$(".magic-navbar").addClass("navbar-appear");
+	$(".signup-style").addClass("signup-magic");
 } else {
-	$(".navbar-default").removeClass("navbar-transparent");
-}
-
-if (distanceScrolled >= 608) {
-	$(".navbar-default").addClass("navbar-convert");
-	$("ul a").css("color", "#525c65");
-	$(".navbar-brand").css("color", "#525c65");
-} else {
-	$(".navbar-default").removeClass("navbar-convert");
-	$("ul a").css("color", "white");
-	$(".navbar-brand").css("color", "white");
+	$(".magic-navbar").removeClass("navbar-appear");
+	$(".signup-style").removeClass("signup-magic");
 }
 
 
-if (distanceScrolled >= 1700) {
+if (distanceScrolled >= 1350) {
 	$(".testimonials-wrapper").addClass("animate-testimonials");
 } else {
 	$(".testimonials-wrapper").removeClass("animate-testimonials");
 }
+
+// if(distanceScrolled >= 408) {
+// 	$(".row").addClass("card-movement");
+// }else {
+// 	$(".row").removeClass("card-movement");
+// }
+
 }); 
+
+//When user clicks on Log in button 
+	//modal window appears
+
+//When user clicks on Sign up button 
+	//modal window appears
 
  
 
+// classroom 
+$(".close").on("click", function() {
+$("nav").addClass("box1");
+});
+
+$(".hamburger").on("click", function() {
+$("nav").removeClass("box1");
+$("nav").addClass("sidebar");
+});
 
 
 
