@@ -182,30 +182,29 @@ h4 {
     transition: opacity 750ms, transform 750ms; 
 }*/
 
-/*
-.anicard:first-child {
-	animation:  appears 1s; 
+
+.anicard1{
+	animation: appears 0.5s;
 }
 
-.anicard:nth-child(2) {
-	animation: appears 1s 2s;
+.anicard2 {
+	animation: appears 1s 1s;
 }
 
-.anicard:last-child {
-	animation: appears 1s 4s;
+.anicard3 {
+	animation: appears 1s .2s;
 }
 
 @keyframes appears {
 	0% {
 		opacity: 0;
 	}
-	50% {
-		opacity: 0.5;
-	}
+	
 	100% {
+		transform: translateX(10px);
 		opacity: 1;
 	}
-}*/
+}
 
 .overlay {
   position: absolute;
