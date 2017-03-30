@@ -176,35 +176,32 @@ h4 {
     transform: scale(1.05);
 }
 
-/*.card-movement {
+.card-movement {
 	opacity: 1;
     transform: translateX(0px) translateY(0px) translateZ(0px);
     transition: opacity 750ms, transform 750ms; 
-}*/
+}
 
+/* .anicard1, .anicard2, .anicard3 {
+	opacity: 0;
+}
 
-.anicard1{
-	animation: appears 0.5s;
+.anicard1 {
+	transition: opacity 0.01s;
 }
 
 .anicard2 {
-	animation: appears 1s 1s;
+	transition: opacity 0.01s 500ms;
 }
 
 .anicard3 {
-	animation: appears 1s .2s;
+	transition: opacity 0.01s 1000ms;
 }
 
-@keyframes appears {
-	0% {
-		opacity: 0;
-	}
-	
-	100% {
-		transform: translateX(10px);
-		opacity: 1;
-	}
+.appears {
+	opacity: 1;
 }
+ */
 
 .overlay {
   position: absolute;
@@ -308,7 +305,7 @@ h4 {
 	transition: all .6s ease-in-out;
 }
 
-article {
+.testimonials-box {
 	width: 30%;
 }
 
@@ -425,7 +422,27 @@ h5 {
 }
 /*END FOOTER*/
 
+/* ==========================================================================
+   Part 2 - Place styles under this line
+========================================================================== */
 
+@media screen and (max-width: 960px) {
+.testimonials-box {
+	width: 50%;
+}
+
+}
+
+
+@media screen and (max-width: 660px) {
+
+}
+
+@media screen and (max-width: 450px) {
+
+
+
+}
 
 
 
