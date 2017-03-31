@@ -21,11 +21,11 @@ if (distanceScrolled >= 1350) {
 // 	$('.anicard1, .anicard2, .anicard3').addClass('appears');
 // }
 
-if(distanceScrolled >= 408) {
-	$(".row").addClass("card-movement");
-}else {
-	$(".row").removeClass("card-movement");
-}
+// if(distanceScrolled >= 408) {
+// 	$(".row").addClass("card-movement");
+// }else {
+// 	$(".row").removeClass("card-movement");
+// }
 
 }); 
 
@@ -51,14 +51,14 @@ $("nav").addClass("sidebar");
 
 
 
-$("#showModal").on("click", function() {
-  	$(".modal-background").fadeIn();
+// $("#showModal").on("click", function() {
+//   	$(".modal-background").fadeIn();
 
-  });
+//   });
 
-  $("#close").on("click", function() {
-  	$(".modal-background").fadeOut()
-  });
+//   $("#close").on("click", function() {
+//   	$(".modal-background").fadeOut()
+//   });
 
 
 
