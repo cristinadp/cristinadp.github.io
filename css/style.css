@@ -39,6 +39,15 @@ body {
 	border-radius: 4px;
 	background-color: yellow;
 }
+
+.navbar-default .navbar-toggle  {
+	border: none;
+}
+
+/* .navbar-toggle {
+	padding: 9px 72px;
+} */
+
 /*END NAVBAR 1*/
 
 /*NAVBAR 2 */
@@ -136,11 +145,8 @@ body {
 .row {
 	margin-right: -57px;
 	margin-left: -57px;
-	margin-bottom: 130px;
-	margin-top: 30px;
-	/*opacity: 0;*/
-   /* transform: translateX(0px) translateY(40px) translateZ(0px);
-    transition: all .3s ease-out;*/
+	margin-bottom: 168px;
+	margin-top: 56px;
 }
 
 .color-card {
@@ -168,7 +174,7 @@ h4 {
 	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
 	width: 350px;
 	margin: auto;
-	height: 250px;
+	height: auto;
 	transition: all .3s ease-out;
 }
 
@@ -299,7 +305,7 @@ h4 {
 	justify-content: space-around;
 	margin: 60px;
 	margin-top: 30px;
-	height: 480px;
+	height: auto;
 	padding-top: 80px;
 	opacity: 0;
 	transition: all .6s ease-in-out;
@@ -369,14 +375,12 @@ h4 {
 
 /*CONTACT */
 .contact {
-	height: 300px;
 	background-image:
    linear-gradient(rgba(0, 189, 157, 0.4), rgba(0, 189, 157, 0.4)),
     url("../img/background-contact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 85vh;
     background-position: left;
     overflow: hidden;
 }
@@ -394,7 +398,7 @@ h4 {
 	padding-top: 20px;
 }
 
-button {
+.contact-button {
 	background-color: #30C5FF;
 	color: #fff;
 	font-size: 18px;
@@ -426,19 +430,41 @@ h5 {
    Part 2 - Place styles under this line
 ========================================================================== */
 
-/* @media screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
+.testimonials-wrapper {
+	flex-wrap: wrap;
+}
+
 .testimonials-box {
 	width: 30%;
 }
 
-} */
+.form {
+	width: 80%;
+}
+.contact {
+	background-position: center;
+}
 
-/* 
+}
+
+
 @media screen and (max-width: 660px) {
+.testimonials-wrapper {
+	flex-wrap: wrap;
+}
+
 .testimonials-box {
 	width: 100%;
 }
-} */
+.form {
+	width: 80%;
+}
+.contact {
+	background-position: center;
+}
+
+}
 
 @media screen and (max-width: 450px) {
 .testimonials-wrapper {
@@ -446,6 +472,14 @@ h5 {
 }
 .testimonials-box {
 	width: 100%;
+}
+
+.form {
+	width: 90%;
+}
+
+.contact {
+	background-position: center;
 }
 
 }
