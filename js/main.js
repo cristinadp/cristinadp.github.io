@@ -17,24 +17,7 @@ if (distanceScrolled >= 1350) {
 	$(".testimonials-wrapper").removeClass("animate-testimonials");
 }
 
-// if (distanceScrolled >= 390) {
-// 	$('.anicard1, .anicard2, .anicard3').addClass('appears');
-// }
-
-// if(distanceScrolled >= 408) {
-// 	$(".row").addClass("card-movement");
-// }else {
-// 	$(".row").removeClass("card-movement");
-// }
-
 }); 
-
-//When user clicks on Log in button 
-	//modal window appears
-
-//When user clicks on Sign up button 
-	//modal window appears
-
  
 
 // classroom 
@@ -48,17 +31,6 @@ $("nav").addClass("sidebar");
 });
 
 
-
-
-
-// $("#showModal").on("click", function() {
-//   	$(".modal-background").fadeIn();
-
-//   });
-
-//   $("#close").on("click", function() {
-//   	$(".modal-background").fadeOut()
-//   });
 
 
 
